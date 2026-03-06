@@ -1,0 +1,160 @@
+{
+  "projectType": "saas",
+  "projectName": "IDURAR ERP CRM",
+  "projectDescription": "Open-source ERP and CRM software with invoicing, accounting, and customer management built on the MERN stack",
+  "theme": "linden",
+  "primaryColor": "#1890ff",
+  "lightColor": "#40a9ff",
+  "darkColor": "#096dd9",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/invoice-management",
+              "features/customer-management",
+              "features/payment-management",
+              "features/quote-management",
+              "features/inventory-management",
+              "features/financial-management",
+              "features/project-management",
+              "features/sales-management"
+            ]
+          },
+          {
+            "group": "User Guide",
+            "pages": [
+              "user-guide/user-management",
+              "user-guide/dashboard",
+              "user-guide/settings",
+              "user-guide/reports-analytics"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/environment-setup",
+              "configuration/database-setup",
+              "configuration/authentication",
+              "configuration/email-setup"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/self-hosting",
+              "deployment/production",
+              "deployment/troubleshooting"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/introduction",
+              "api/authentication",
+              "api/errors"
+            ]
+          },
+          {
+            "group": "Core Endpoints",
+            "pages": [
+              "api/invoice",
+              "api/quote",
+              "api/client",
+              "api/payment",
+              "api/payment-mode",
+              "api/taxes"
+            ]
+          },
+          {
+            "group": "API Operations",
+            "pages": [
+              "api/crud-operations",
+              "api/search-filter",
+              "api/pagination"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Architecture",
+            "pages": [
+              "development/architecture",
+              "development/backend-structure",
+              "development/frontend-structure",
+              "development/database-models"
+            ]
+          },
+          {
+            "group": "Contributing",
+            "pages": [
+              "development/contributing",
+              "development/code-guidelines",
+              "development/setup-dev-environment"
+            ]
+          },
+          {
+            "group": "Customization",
+            "pages": [
+              "development/custom-modules",
+              "development/theming",
+              "development/integrations"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Invoice Management with PDF generation",
+    "Customer Relationship Management (CRM)",
+    "Payment Processing and Tracking",
+    "Quote Management and Conversion",
+    "Inventory Management with Stock Tracking",
+    "Financial Management and Accounting",
+    "Project Management with Task Tracking",
+    "Sales Management and Reporting",
+    "User Management with Role-Based Access Control",
+    "Multi-language Support",
+    "RESTful API",
+    "Dashboard and Analytics"
+  ],
+  "publicApiSurface": [
+    "POST /api/invoice/create",
+    "GET /api/invoice/read/:id",
+    "PATCH /api/invoice/update/:id",
+    "DELETE /api/invoice/delete/:id",
+    "GET /api/invoice/list",
+    "GET /api/invoice/search",
+    "POST /api/invoice/mail",
+    "POST /api/quote/create",
+    "GET /api/quote/convert/:id",
+    "POST /api/client/create",
+    "GET /api/client/list",
+    "POST /api/payment/create",
+    "GET /api/payment/list",
+    "POST /api/payment/mail",
+    "POST /api/auth/login",
+    "POST /api/auth/register",
+    "GET /api/auth/profile"
+  ]
+}
